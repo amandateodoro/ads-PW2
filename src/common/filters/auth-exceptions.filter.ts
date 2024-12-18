@@ -28,7 +28,7 @@ export class AuthExceptionFilter implements ExceptionFilter {
         'loginError',
         'Usuário e/ou senha incorretos! Tente novamente.',
       );
-      response.redirect('/auth/login');
+      response.redirect('/');
     } else {
       response.redirect('/error');
     }

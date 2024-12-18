@@ -25,16 +25,10 @@ export class UsersService {
         password: 'guess',
         pet: { name: 'jenny', picId: 3 },
       },
-      {
-        userId: 4,
-        username: 'amanda',
-        password: '1234',
-        pet: { name: 'moonchld', picId: 4 },
-      },
     ];
   }
 
   async findOne(username: string): Promise<any> {
-    return this.users.find((user) => user.username === username);
+    return this.users.find(user => user.username === username);
   }
 }
